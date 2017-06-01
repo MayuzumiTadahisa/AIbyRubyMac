@@ -72,7 +72,14 @@ class Nav
             if ma[0] == 1
                 if svType == 2 #直前が漢字
                     if ma[0] == 1  #今回がひらがなの場合、動詞、形容詞、形容動詞の判定
-                        puts "=DBG=:動詞、形容詞、形容動詞の判定"
+                        case ma[1][0]
+                        when "う" 
+                            filev.write svMorph + ma[1][0] + "\n"
+                        when "い"
+                            filea.write svMorph + ma[1][0] + "\n"
+                        when "だ"
+                            filed.write svMorph + ma[1][0] + "\n"
+                        end
                     end
                 end
             else #漢字、カタカナの場合は名詞の書き出し

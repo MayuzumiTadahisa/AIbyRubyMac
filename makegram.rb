@@ -12,7 +12,7 @@ File.open(filename) do |file|
     end
 end
 
-gramsname = "grams.txt"
+gramsname = "data/grams.txt"
 
 File.open(gramsname,"w") do |f|
     grams.each do |gram|

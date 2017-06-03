@@ -3,7 +3,7 @@ class Sakura
     def initialize(talkType = "nisendouka")
         @talkType = talkType
 
-        gramFile = "grams.txt"
+        gramFile = "data/grams.txt"
 
         #Arrayへの読み込み
         @gramArray = Array.new

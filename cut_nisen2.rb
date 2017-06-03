@@ -1,6 +1,6 @@
 require 'cgi/util'
-htmlfile = "nisendouka.html"
-textfile = "nisendouka.txt"
+htmlfile = "data/nisendouka.html"
+textfile = "data/nisendouka.txt"
 
 html = File.read(htmlfile)
 

@@ -14,7 +14,7 @@ class Sakura
     def initialize
         #名詞の読み込み
         @ns = Array.new
-        filen = "cutnav_n.txt"
+        filen = "data/cutnav_n.txt"
         File.open(filen) do |fn|
             fn.each_line do |ln|
                 @ns << ln.chomp
@@ -23,7 +23,7 @@ class Sakura
 
         #動詞の読み込み
         @vs = Array.new
-        filev = "cutnav_v.txt"
+        filev = "data/cutnav_v.txt"
         File.open(filev) do |fv|
             fv.each_line do |lv|
                 @vs << lv.chomp
@@ -32,7 +32,7 @@ class Sakura
 
         #形容詞の読み込み
         @as = Array.new
-        filea = "cutnav_a.txt"
+        filea = "data/cutnav_a.txt"
         File.open(filea) do |fa|
             fa.each_line do |la|
                 @as << la.chomp
@@ -41,7 +41,7 @@ class Sakura
 
         #形容動詞の読み込み
         @ds = Array.new
-        filed = "cutnav_d.txt"
+        filed = "data/cutnav_d.txt"
         File.open(filed) do |fd|
             fd.each_line do |ld|
                 @ds << ld.chomp

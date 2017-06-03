@@ -1,4 +1,4 @@
-filename = "nisendouka.txt"
+filename = "data/nisendouka.txt"
 gramlength = 2
 
 grams = Array.new
@@ -13,7 +13,7 @@ File.open(filename) do |file|
     end
 end
 
-gramsname = "grams.txt"
+gramsname = "data/grams.txt"
 
 File.open(gramsname,"w") do |f|
     #文字配列を文字列長毎に組み合わせて出力

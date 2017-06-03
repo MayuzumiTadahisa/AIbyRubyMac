@@ -1,7 +1,7 @@
 require "moji"
 
 class Nav
-    def initialize (filename = "nisendouka.txt")
+    def initialize (filename = "data/nisendouka.txt")
         #全角文字の抽出
         letters = Array.new
         File.open(filename) do |file|

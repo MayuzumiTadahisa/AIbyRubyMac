@@ -1,6 +1,6 @@
 require "moji"
 
-filename = "nisendouka.txt"
+filename = "data/nisendouka.txt"
 
 #全角文字の抽出
 grams = Array.new
@@ -14,7 +14,7 @@ File.open(filename) do |file|
     end
 end
 
-outname = "cutmorph.txt"
+outname = "data/cutmorph.txt"
 File.open(outname,"w") do |f|
     #文字種毎に出力
     letterType = 0

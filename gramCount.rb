@@ -1,4 +1,4 @@
-filename = "nisendouka.txt"
+filename = "data/nisendouka.txt"
 gramlength = 2
 
 grams = Array.new
@@ -13,7 +13,7 @@ File.open(filename) do |file|
     end
 end
 
-gramsname = "grams.txt"
+gramsname = "data/grams.txt"
 
 File.open(gramsname,"w") do |f|
     #文字配列を文字列長毎に組み合わせて出力
@@ -45,8 +45,8 @@ File.open(gramsname) do |g|
 end
 
 #カウントの出力
-countname = "gramcount.txt"
-File.open("gramcount.txt","w") do |c|
+countname = "data/gramcount.txt"
+File.open(countname,"w") do |c|
     count.sort{|a,b|
         a[1] <=> b[1]
     }.reverse.each do |key,value|

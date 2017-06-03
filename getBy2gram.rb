@@ -52,7 +52,7 @@ class Sakura
             end
 
             getThisGrams(letter)
-            i = Random.rand(@thisGrams.length - 1)
+            i = Random.rand(@thisGrams.length)
             letter = @thisGrams[i][0]
             @script += letter
         end

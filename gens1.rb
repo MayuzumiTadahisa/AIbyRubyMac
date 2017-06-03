@@ -28,11 +28,11 @@ class Sakura
 
     def getScript(message)
         #名詞の取得
-        ni = Random.rand(@ns.length - 1)
+        ni = Random.rand(@ns.length)
         n = @ns[ni]
 
         #動詞の取得
-        vi = Random.rand(@vs.length - 1)
+        vi = Random.rand(@vs.length)
         v = @vs[vi]
 
         @script = n + "は" + v + "。"

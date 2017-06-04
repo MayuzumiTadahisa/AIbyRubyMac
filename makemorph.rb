@@ -77,9 +77,9 @@ class MakeMorph
     end
 end
 
-#morph = MakeMorph.new("nisendouka")
-#morph.cutMorph("nisendouka")
-#morph.makeMorph("nisendouka")
+morph = MakeMorph.new("nisendouka")
+morph.cutMorph("nisendouka")
+morph.makeMorph("nisendouka")
 
 morph = MakeMorph.new("bocchan")
 morph.cutMorph("bocchan")

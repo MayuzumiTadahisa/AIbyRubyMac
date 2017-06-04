@@ -25,6 +25,7 @@ class GetAozora
                 end
                 break if /<div class="bibliograhical_information">/ =~ line
                 line.gsub!(/<[^>]+>/, '')
+                line.gsub!(/（[^）]+）/, '')
                 esc_line = CGI.unescapeHTML(line)
                 f.write esc_line
             end
@@ -32,6 +33,6 @@ class GetAozora
     end
 end
 
-#aozora = GetAozora.new("001779","56647_58167","nisendouka")
+aozora = GetAozora.new("001779","56647_58167","nisendouka")
 aozora = GetAozora.new("000148","752_14964","bocchan")
 

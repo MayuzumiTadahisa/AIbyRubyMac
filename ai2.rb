@@ -30,7 +30,7 @@ class Sakura
             end
         end
 
-        if @thisGrams.length == 0 || letter = " "
+        if @thisGrams.length == 0 || letter == " "
             @thisGrams = @initGram
         end
 

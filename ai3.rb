@@ -111,7 +111,7 @@ class Sakura
             ##dbg
             #puts "=DBG=" + e[0] + e[1]
 
-            if e[0] == "2" #漢字をキーワードにする
+            if e[0] == "2" || e[0] == "3" #漢字、カタカナをキーワードにする
                 keyword = e[1]
                 break
             end
@@ -147,6 +147,6 @@ class Sakura
     end
 end
 
-sakura = Sakura.new("nisendouka");
-#sakura = Sakura.new("bocchan");
+#sakura = Sakura.new("nisendouka");
+sakura = Sakura.new("bocchan");
 sakura.talk
